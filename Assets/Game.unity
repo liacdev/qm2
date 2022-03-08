@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 569060361}
   - component: {fileID: 569060360}
   - component: {fileID: 569060359}
+  - component: {fileID: 569060363}
   m_Layer: 5
   m_Name: QuizCanvas
   m_TagString: Untagged
@@ -224,6 +225,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &569060363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569060358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54b66508e1ff0301adc2216fe117f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionText: {fileID: 1999621423}
+  question: {fileID: 11400000, guid: 152f6c1428c7c213bb89e1bf8e11b53b, type: 2}
+  answerButtons:
+  - {fileID: 1830911415}
+  - {fileID: 1551676234}
+  - {fileID: 793604801}
+  - {fileID: 2024237327}
+--- !u!1 &793604801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3841497519721924840, guid: a2831877e179c896d800676600e5e8c7, type: 3}
+  m_PrefabInstance: {fileID: 1520903818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &819147854
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1098725290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,12 +802,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: AnswerButton (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5859953781181084125, guid: a2831877e179c896d800676600e5e8c7, type: 3}
+      propertyPath: m_text
+      value: Is
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2831877e179c896d800676600e5e8c7, type: 3}
 --- !u!224 &1520903819 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1415968971546551420, guid: a2831877e179c896d800676600e5e8c7, type: 3}
   m_PrefabInstance: {fileID: 1520903818}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1551676234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3841497519721924840, guid: a2831877e179c896d800676600e5e8c7, type: 3}
+  m_PrefabInstance: {fileID: 1857545634}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1576533256
 PrefabInstance:
@@ -879,12 +913,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: AnswerButton (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5859953781181084125, guid: a2831877e179c896d800676600e5e8c7, type: 3}
+      propertyPath: m_text
+      value: Back
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2831877e179c896d800676600e5e8c7, type: 3}
 --- !u!224 &1576533257 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1415968971546551420, guid: a2831877e179c896d800676600e5e8c7, type: 3}
   m_PrefabInstance: {fileID: 1576533256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1830911415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3841497519721924840, guid: a2831877e179c896d800676600e5e8c7, type: 3}
+  m_PrefabInstance: {fileID: 6566355075940550571}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1857545634
 PrefabInstance:
@@ -980,6 +1023,10 @@ PrefabInstance:
     - target: {fileID: 3841497519721924840, guid: a2831877e179c896d800676600e5e8c7, type: 3}
       propertyPath: m_Name
       value: AnswerButton (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859953781181084125, guid: a2831877e179c896d800676600e5e8c7, type: 3}
+      propertyPath: m_text
+      value: Potato
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2831877e179c896d800676600e5e8c7, type: 3}
@@ -1298,6 +1345,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999621421}
   m_CullTransparentMesh: 1
+--- !u!1 &2024237327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3841497519721924840, guid: a2831877e179c896d800676600e5e8c7, type: 3}
+  m_PrefabInstance: {fileID: 1576533256}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2107760283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,6 +1510,10 @@ PrefabInstance:
     - target: {fileID: 3841497519721924840, guid: a2831877e179c896d800676600e5e8c7, type: 3}
       propertyPath: m_Name
       value: AnswerButton (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859953781181084125, guid: a2831877e179c896d800676600e5e8c7, type: 3}
+      propertyPath: m_text
+      value: Rotten
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2831877e179c896d800676600e5e8c7, type: 3}
