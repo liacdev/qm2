@@ -293,6 +293,7 @@ RectTransform:
   - {fileID: 1999621422}
   - {fileID: 1286400999}
   - {fileID: 145941497}
+  - {fileID: 1342877859}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -314,7 +315,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionText: {fileID: 1999621423}
-  question: {fileID: 11400000, guid: 152f6c1428c7c213bb89e1bf8e11b53b, type: 2}
+  questions:
+  - {fileID: 11400000, guid: 152f6c1428c7c213bb89e1bf8e11b53b, type: 2}
+  - {fileID: 11400000, guid: b09ba8b111dc29dd89c4f5ec6a0a3f44, type: 2}
+  - {fileID: 11400000, guid: e0703c9f422b0a1bdba68d6127e99237, type: 2}
+  - {fileID: 11400000, guid: cd72bdfb058bee35b8a3769213f8e67c, type: 2}
+  - {fileID: 11400000, guid: 970d103ef96092e1c96dc7703e34017c, type: 2}
   answerButtons:
   - {fileID: 1830911415}
   - {fileID: 1551676234}
@@ -322,6 +328,7 @@ MonoBehaviour:
   - {fileID: 2024237327}
   defaultAnswerSprite: {fileID: 21300000, guid: bc470e07f208d646a8a26d5670435111, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: 2cc50226154c44a69a7341eb0e999160, type: 3}
+  timerImage: {fileID: 145941498}
 --- !u!1 &793604801 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3841497519721924840, guid: a2831877e179c896d800676600e5e8c7, type: 3}
@@ -785,6 +792,59 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1342877858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1342877859}
+  - component: {fileID: 1342877860}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1342877859
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342877858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 569060362}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1342877860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342877858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab194b99a09c4221f8fa2defecb015a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToCompleteQuestion: 3
+  timeToShowCorrectAnswer: 2
+  loadNextQuestion: 0
+  fillFraction: 0
+  isAnsweringQuestion: 0
 --- !u!1001 &1520903818
 PrefabInstance:
   m_ObjectHideFlags: 0
